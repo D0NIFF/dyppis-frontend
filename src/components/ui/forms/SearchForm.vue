@@ -23,6 +23,8 @@ import IconButton from '@/components/ui/buttons/IconButton.vue'
   width: 95%;
 }
 .search-btn {
+  width: 50px;
+  height: 50px;
   margin-left: -42px;
   margin-top: 3px;
 }
