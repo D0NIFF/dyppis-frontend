@@ -74,14 +74,14 @@ export default {
   border: 2px solid var(--light-lime);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .header-categories-list {
     grid-gap: 1%;
-    flex-wrap: wrap; /* Добавлено для корректного распределения */
-    justify-content: space-between; /* Обновлено для корректного распределения */
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .header-categories-list a {
-    flex-basis: 49.5%; /* Обновлено для корректного распределения */
+    flex-basis: 49.5%;
     margin-top: 5px;
     border: none;
   }
