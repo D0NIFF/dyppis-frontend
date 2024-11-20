@@ -20,19 +20,19 @@
   "home": {
     "recommendations": "Recomendaciones",
     "advantages": "Nuestras ventajas",
-      "advantages-list": {
-        "support": {
-          "title": "Soporte técnico",
-          "description": "Nuestro equipo de expertos está listo para responder todas sus preguntas, incluso las más tontas, que surjan durante la compra de un artículo en un plazo de 2 horas."
-        },
-        "security": {
-          "title": "Transacción segura",
-          "description": "Garantizamos la corrección del artículo enviado a usted y también será entregado instantáneamente a su oficina privada."
-        },
-        "payment": {
-          "title": "Métodos de pago",
-          "description": "En nuestra plataforma puedes recargar tu saldo con todos los sistemas de pago más populares, protegiéndote así de cualquier engaño."
-        }
+    "advantages-list": {
+      "support": {
+        "title": "Soporte técnico",
+        "description": "Nuestro equipo de expertos está listo para responder todas sus preguntas, incluso las más tontas, que surjan durante la compra de un artículo en un plazo de 2 horas."
+      },
+      "security": {
+        "title": "Transacción segura",
+        "description": "Garantizamos la corrección del artículo enviado a usted y también será entregado instantáneamente a su oficina privada."
+      },
+      "payment": {
+        "title": "Métodos de pago",
+        "description": "En nuestra plataforma puedes recargar tu saldo con todos los sistemas de pago más populares, protegiéndote así de cualquier engaño."
       }
+    }
   }
 }
