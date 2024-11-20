@@ -9,7 +9,7 @@ import IconButton from '@/components/ui/buttons/IconButton.vue'
       <SearchInput :placeholder="$t('header.search')"></SearchInput>
     </div>
     <div class="search-btn">
-      <IconButton :src="'images/icons/search-icon.svg'"></IconButton>
+      <IconButton :src="'/images/icons/search-icon.svg'"></IconButton>
     </div>
   </div>
 </template>
