@@ -33,7 +33,7 @@ export default {
         es: 'ES',
         de: 'DE',
         fr: 'FR',
-        it: 'UT',
+        it: 'IT',
         ru: 'RU',
       },
     }
@@ -84,14 +84,6 @@ export default {
   width: 40px;
   height: 25px;
   margin-right: 10px;
-}
-
-.arrow {
-  margin-left: auto;
-  width: 10px;
-  height: 10px;
-  background: url('data:image/svg+xml;utf8,<svg fill="none" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9l6 6 6-6"/></svg>')
-    no-repeat center;
 }
 
 .dropdown-menu {
