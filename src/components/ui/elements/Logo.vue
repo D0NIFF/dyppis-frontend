@@ -1,6 +1,6 @@
 <template>
   <a href="/" class="logo">
-    <img src="images/icons/logo.svg" alt="" />
+    <img src="/images/icons/logo.svg" alt="" />
     <p><slot>DYPPIS</slot></p>
   </a>
 </template>
