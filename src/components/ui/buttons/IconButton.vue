@@ -17,6 +17,7 @@ export default {
       type: String,
       required: false,
     },
+    /* Function by click */
     onclick: {
       type: Function,
       required: false,
@@ -27,8 +28,8 @@ export default {
 
 <style scoped>
 button {
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
   border: none;
   outline: none;
