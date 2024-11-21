@@ -10,22 +10,22 @@ import { languages, defaultLocale } from '@/i18n/index'
 import { createI18n, useI18n } from 'vue-i18n'
 
 const urlParams = new URLSearchParams(window.location.search)
-let lang = urlParams.get('lang') || localStorage.getItem('lang') || 'en' // Изменяем const на let
+let lang = urlParams.get('lang') || localStorage.getItem('lang') || 'en'
 if (!['en', 'es', 'de', 'fr', 'it', 'ru'].includes(lang)) {
   lang = 'en'
 }
-localStorage.setItem('lang', lang) // Сохраняем язык в localStorage
+localStorage.setItem('lang', lang)
 
 const messages = Object.assign(languages)
 const i18n = createI18n({
   legacy: false,
-  locale: lang, // Устанавливаем язык сразу
+  locale: lang,
   fallbackLocale: 'en',
   messages,
 })
 
 router.beforeEach((to, from, next) => {
-  let lang = to.query.lang || localStorage.getItem('lang') || 'en' // Изменяем const на let
+  let lang = to.query.lang || localStorage.getItem('lang') || 'en'
   if (!['en', 'es', 'de', 'fr', 'it', 'ru'].includes(lang)) {
     lang = 'en'
   }
