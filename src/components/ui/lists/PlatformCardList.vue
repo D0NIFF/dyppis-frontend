@@ -87,6 +87,7 @@ export default {
 }
 .preview {
   width: 40%;
+  margin-top: 5px;
 }
 .preview img {
   width: 100%;
@@ -106,6 +107,6 @@ export default {
   font-family: var(--default-font);
   font-weight: 400;
   font-size: 12px;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 </style>
