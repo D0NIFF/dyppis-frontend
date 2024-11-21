@@ -21,7 +21,6 @@ export default {
   props: {
     platformTypes: Array,
     apiUrl: String,
-    getLang: Function,
   },
   watch: {
     getLang: {
@@ -36,6 +35,9 @@ export default {
       this.platformTypes.forEach((item) => {
         item.title = JSON.parse(item.title)
       })
+    },
+    getLang() {
+      return localStorage.getItem('lang')
     },
   },
 }
