@@ -28,9 +28,9 @@ import Header from '@/components/layouts/Header.vue'
   margin-right: auto;
 }
 
-@media only screen and (max-width: 1000px) {
-  .container {
-    margin-top: 240px;
+@media only screen and (max-width: 950px) {
+  .content {
+    padding: 0 10px;
   }
 }
 @media only screen and (max-width: 500px) {
