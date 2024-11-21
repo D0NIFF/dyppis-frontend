@@ -30,12 +30,10 @@ import BurgerMenu from '@/components/ui/dropdowns/BurgerMenu.vue'
       </nav>
     </div>
     <div class="bottom-block">
-      <PlatformTypeList :platformTypes="this.platformTypes" :getLang="this.getLang" />
+      <PlatformTypeList :platformTypes="this.platformTypes" />
     </div>
   </header>
 </template>
-
-<style scoped></style>
 
 <script>
 export default {
@@ -47,9 +45,6 @@ export default {
     }
   },
   methods: {
-    getLang() {
-      return localStorage.getItem('lang')
-    },
     async getPlatformTypes() {
       /* TODO: Tepmp linking files */
       // try {
@@ -98,6 +93,7 @@ export default {
 <style scoped>
 header {
   width: 100%;
+  margin-bottom: 20px;
 }
 .top-block {
   width: 100%;
@@ -127,7 +123,7 @@ header {
 }
 .bottom-block {
   width: 100%;
-  height: 100px;
+  height: 50px;
 }
 .burger-menu {
   display: none;
@@ -156,6 +152,9 @@ header {
   }
   .login-block {
     display: none;
+  }
+  .bottom-block {
+    height: 100px;
   }
 }
 </style>
