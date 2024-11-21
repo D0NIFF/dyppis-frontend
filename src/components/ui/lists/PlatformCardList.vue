@@ -1,6 +1,6 @@
 <template>
   <div class="card-list">
-    <div class="platform-card" v-for="card in data" :key="card.id">
+    <div class="platform-card" v-for="card in updatedData" :key="card.id">
       <a :href="'catalog/' + card.id" class="card">
         <div class="preview">
           <img :src="card.image" alt="" />
@@ -9,7 +9,7 @@
           <p>{{ card.title }}</p>
         </div>
         <div class="subtitle">
-          <p>{{ card.subtitle[this.getLang()] }}</p>
+          <p>{{ card.subtitle[getLang()] }}</p>
         </div>
       </a>
     </div>
@@ -24,22 +24,33 @@ export default {
       required: true,
     },
   },
-  watch: {
-    getLang: {
-      handler() {
-        this.updatePlatformSubtitle()
-      },
-      immediate: true,
-    },
+  data() {
+    return {
+      updatedData: this.getUpdatedData(),
+    }
   },
   methods: {
     getLang() {
-      return localStorage.getItem('lang')
+      return localStorage.getItem('lang') || 'en'
     },
-    updatePlatformSubtitle() {
-      this.data.forEach((item) => {
-        item.subtitle = JSON.parse(item.subtitle)
+    getUpdatedData() {
+      return this.data.map((item) => {
+        if (typeof item.subtitle === 'string') {
+          item.subtitle = JSON.parse(item.subtitle)
+        }
+        return item
       })
+    },
+    updateData() {
+      this.updatedData = this.getUpdatedData()
+    },
+  },
+  watch: {
+    '$i18n.locale': {
+      handler() {
+        this.updateData()
+      },
+      immediate: true,
     },
   },
 }
