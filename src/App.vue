@@ -1,5 +1,5 @@
 <!-- eslint-disable @typescript-eslint/no-unused-vars -->
-<script setup lang="ts">
+<script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import Carousel from '@/components/ui/media/Carousel.vue'
 import PlatformCardList from '@/components/ui/lists/PlatformCardList.vue'
 </script>
@@ -12,7 +12,7 @@ import PlatformCardList from '@/components/ui/lists/PlatformCardList.vue'
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   data() {
     return {
