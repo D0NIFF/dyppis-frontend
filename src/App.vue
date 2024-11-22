@@ -5,13 +5,15 @@ import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n({ useScope: 'global' })
 import Header from '@/components/layouts/Header.vue'
+import Footer from '@/components/layouts/Footer.vue'
 </script>
 
 <template>
-  <Header></Header>
+  <Header />
   <div class="content">
     <RouterView />
   </div>
+  <Footer />
 </template>
 
 <style scoped>

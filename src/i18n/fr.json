@@ -17,6 +17,9 @@
       "qa": "Question - Réponse"
     }
   },
+  "button": {
+    "see-more": "Voir plus d'informations"
+  },
   "home": {
     "recommendations": "Recommandations",
     "advantages": "Nos avantages",
