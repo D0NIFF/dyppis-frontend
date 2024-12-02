@@ -62,7 +62,7 @@ footer {
   justify-content: center;
 }
 footer .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   background-color: var(--dark-background);
