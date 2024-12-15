@@ -11,6 +11,7 @@ export default {
   data() {
     return {
       letters: [
+        'All',
         'A',
         'B',
         'C',
@@ -63,6 +64,8 @@ export default {
 .letter {
   padding: 10px;
   color: white;
+  font-family: var(--default-font);
+  font-weight: 600;
   background-color: var(--dark-light-background);
   transition: 0.2s ease-in-out;
   cursor: pointer;

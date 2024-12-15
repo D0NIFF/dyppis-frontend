@@ -1,6 +1,6 @@
 <script setup>
 import Carousel from '@/components/ui/media/Carousel.vue'
-import PlatformCardList from '@/components/ui/lists/PlatformCardList.vue'
+import PlatformList from '@/components/ui/lists/PlatformList.vue'
 import ProductList from '@/components/ui/lists/ProductList.vue'
 import InfoCardList from '@/components/ui/lists/InfoCardList.vue'
 import BlockHeader from '@/components/ui/elements/BlockHeader.vue'
@@ -11,7 +11,7 @@ import BlockHeader from '@/components/ui/elements/BlockHeader.vue'
     <Carousel :images="images" :autoPlay="true"></Carousel>
   </div>
   <div class="platforms-list">
-    <PlatformCardList :data="platformCards" />
+    <PlatformList :data="platformCards" />
   </div>
   <div class="products-head">
     <BlockHeader :image="'/images/icons/recommendations-icon.svg'">
@@ -47,29 +47,33 @@ export default {
       platformCards: [
         {
           id: '1',
-          image: 'images/platforms/steam.svg',
+          slug: 'steam',
+          image: '/images/platforms/steam-logo.svg',
           title: 'Steam',
           subtitle:
             '{"de": "Software", "en": "Software", "es": "Software", "fr": "Logiciel", "it": "Software", "ru": "Программное обеспечение"}',
         },
         {
           id: '2',
-          image: 'images/platforms/microsoft.svg',
+          slug: 'microsoft',
+          image: '/images/platforms/microsoft-logo.svg',
           title: 'Microsoft',
           subtitle:
             '{"de": "Software", "en": "Software", "es": "Software", "fr": "Logiciel", "it": "Software", "ru": "Программное обеспечение"}',
         },
         {
           id: '3',
-          image: 'images/platforms/steam.svg',
-          title: 'Steam',
+          slug: 'epic-games',
+          image: '/images/platforms/epic-games-logo.svg',
+          title: 'Epic Games',
           subtitle:
             '{"de": "Software", "en": "Software", "es": "Software", "fr": "Logiciel", "it": "Software", "ru": "Программное обеспечение"}',
         },
         {
           id: '4',
-          image: 'images/platforms/microsoft.svg',
-          title: 'Microsoft',
+          slug: 'origin',
+          image: '/images/platforms/origin-logo.svg',
+          title: 'Origin',
           subtitle:
             '{"de": "Software", "en": "Software", "es": "Software", "fr": "Logiciel", "it": "Software", "ru": "Программное обеспечение"}',
         },
